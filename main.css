@@ -146,7 +146,17 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;}
             .navi:last-child{margin: 0px;}
-        .link {
+            .link::after{content: '';
+display: block;
+width: 100%;
+background: #2196F3;
+height: 2px;
+position: absolute;
+bottom: 0;
+display: none;
+}
+.link:hover::after{display: block;}
+        .link { position: relative;
             display: flex;
              display: block;
             padding-top: 32px;
@@ -486,6 +496,41 @@ display: flex; }
       flex-wrap: wrap;
    }
 
+   .last-page{position: relative; overflow: hidden;}
+
+.master-photo:hover .portfolio-overlay {
+    transform: translateY(0%);
+}
+.master-photo.img{display: block;}
+
+.portfolio-overlay{
+   
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 110%;
+background: rgba(33, 150, 243, 0.9);
+transform: translateY(100%);
+transition: transform 250ms linear;
+}
+.texno{
+    justify-content: center;
+    padding-top: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+     font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;}
+
       .last-page img {
      width: 100%;}
     .mi-project{text-align-last: left;
@@ -493,9 +538,7 @@ display: flex; }
 
 .last-page{margin-right: 30px;margin-bottom: 30px;
   justify-content: center;
-width: 370px; 
-
-}
+width: 370px; border: 1px solid #EEEEEE;}
 .last-page:hover{
     border: 1px solid #EEEEEE;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
