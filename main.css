@@ -257,6 +257,24 @@ color: #757575;  }
 .less{padding-top: 94px;
 
 }
+ .decor{
+     padding-top: 27px;
+     background: rgba(47, 48, 58, 0.8);
+     font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+     position: absolute;
+     right: 0px;
+     bottom: 0px;
+      width: 370px;
+      height: 70px;}
 
 
     .lessons{text-align: center;
